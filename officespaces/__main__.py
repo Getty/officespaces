@@ -1,3 +1,10 @@
-from officespaces.log import *
+from . import log
 
-__all__ = [name for name in dir() if not name.startswith('_')]
+__all__ = []
+
+for module in ('log'):
+    __all__.extend(log.__all__)
+
+from .log import *
+
+L_DEBUG("Loaded officespaces")

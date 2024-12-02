@@ -21,6 +21,12 @@ setup(
         "flask",
         "uvicorn",
     ],
+    extras_require={
+        "dev": [
+            "flake8>=6.0.0",
+            "pytest",
+        ]
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

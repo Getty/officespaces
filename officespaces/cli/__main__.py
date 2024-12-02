@@ -2,8 +2,10 @@ from officespaces import *
 
 import argparse
 
+
 def run(args):
     L_INFO("Starting CLI")
+
 
 def main():
     parser = argparse.ArgumentParser(description="OfficeSpaces CLI client")
@@ -19,6 +21,7 @@ def main():
         L_DEBUG(f"Unknown arguments: {unknown_args}")
 
     run(args)
+
 
 if __name__ == "__main__":
     main()

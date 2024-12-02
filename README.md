@@ -16,6 +16,9 @@ Inside the docker
 # install uv installer and build system
 pip install build uv
 
+# install requirements
+pip install .[dev]
+
 # build package
 python -m build --installer=uv
 ```

@@ -7,7 +7,7 @@ Deploy local HuggingFace-like app or model spaces with Docker for private, scala
 Start environment for development
 
 ```bash
-docker run -v$PWD:/app -it --rm src.ci/srv/python:latest bash
+docker run -it --rm -v/var/run/docker.sock:/var/run/docker.sock -v$PWD:/app --group $(getent group docker | awk -F: '{print $3}') src.ci/srv/python:latest bash
 ```
 
 Inside the docker

@@ -7,6 +7,7 @@ if not logging.getLogger().hasHandlers():
         level=logging.DEBUG,
         format='%(asctime)s [%(levelname)s] %(pathname)s:%(lineno)u %(message)s'
     )
+
 if not logger:
     logger = logging.getLogger(__name__)
 

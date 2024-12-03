@@ -24,6 +24,7 @@ Dockerfile
 # Restore src/build in case user ignores 'build'
 !src/build
 
+.plandex-home/
 .bash_history
 .cache
 .local

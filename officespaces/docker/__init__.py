@@ -1,4 +1,5 @@
-from officespaces import *
+from .. import *
+
 import docker
 from collections import Counter
 

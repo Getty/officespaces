@@ -1,4 +1,4 @@
-from officespaces import *
+from .. import *
 
 import argparse
 
